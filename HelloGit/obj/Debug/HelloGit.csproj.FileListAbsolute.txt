@@ -5,8 +5,8 @@ C:\Users\Jeffrey\TestGit\HelloGit\HelloGit\obj\Debug\HelloGit.csprojResolveAssem
 C:\Users\Jeffrey\TestGit\HelloGit\HelloGit\obj\Debug\HelloGit.exe
 C:\Users\Jeffrey\TestGit\HelloGit\HelloGit\obj\Debug\HelloGit.pdb
 C:\Users\Jeffrey\HelloGit01\HelloGit\HelloGit\bin\Debug\HelloGit.exe.config
-C:\Users\Jeffrey\HelloGit01\HelloGit\HelloGit\obj\Debug\HelloGit.exe
-C:\Users\Jeffrey\HelloGit01\HelloGit\HelloGit\obj\Debug\HelloGit.pdb
 C:\Users\Jeffrey\HelloGit01\HelloGit\HelloGit\bin\Debug\HelloGit.exe
 C:\Users\Jeffrey\HelloGit01\HelloGit\HelloGit\bin\Debug\HelloGit.pdb
+C:\Users\Jeffrey\HelloGit01\HelloGit\HelloGit\obj\Debug\HelloGit.exe
+C:\Users\Jeffrey\HelloGit01\HelloGit\HelloGit\obj\Debug\HelloGit.pdb
 C:\Users\Jeffrey\HelloGit01\HelloGit\HelloGit\obj\Debug\HelloGit.csprojResolveAssemblyReference.cache
