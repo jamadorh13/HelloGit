@@ -6,42 +6,18 @@ using System.Threading.Tasks;
 
 namespace HelloGit
 {
-    class Program
+    class Program : Calculadora
     {
         static void Main(string[] args)
         {
-            string a = "GIT" +"H";
-
-            Console.WriteLine("Hello {0}", a);
-
-            double am = 64.89;
-
-            Console.WriteLine(am);
-            am = 0;
-            Console.WriteLine(am);
-            for (int i = 1; i <= 12; i++)
-            {
-                for (int e = 1; e <= 12; e++)
-                {
-                    int aa = i * e;
-
-
-
-
-                    Console.WriteLine(i + "x" + e + "=" + "0" + aa.ToString());
-
-                }
-
-                }
-                Console.ReadLine();
-                Console.Clear();
+            Calculadora calculadora = new Calculadora();
                 try
                 {
 
                     double primero = 0;
                     double segundo = 0;
                     string operador;
-                    double result = 0;
+                    
                     do
                     {
 
@@ -58,23 +34,22 @@ namespace HelloGit
 
                         if (operador == "*" || operador == "x" || operador == "X")
                         {
-                            result = primero * segundo;
-                            Console.WriteLine("El resultado de {0} * {1} = {2}", primero, segundo, result);
+                            Console.WriteLine("El resultado de {0} * {1} = {2}", primero, segundo, calculadora.multiply(primero, segundo));
                         }
                         else if (operador == "+")
                         {
-                            result = primero + segundo;
-                            Console.WriteLine("El resultado de {0} + {1} = {2}", primero, segundo, result);
+                            
+                            Console.WriteLine("El resultado de {0} + {1} = {2}", primero, segundo, calculadora.plus(primero,segundo));
                         }
                         else if (operador == "-")
                         {
-                            result = primero - segundo;
-                            Console.WriteLine("El resultado de {0} - {1} = {2}", primero, segundo, result);
+                            
+                            Console.WriteLine("El resultado de {0} - {1} = {2}", primero, segundo, calculadora.minus(primero, segundo));
                         }
                         else if (operador == "/")
                         {
-                            result = primero / segundo;
-                            Console.WriteLine("El resultado de {0} / {1} = {2}", primero, segundo, result);
+                            
+                            Console.WriteLine("El resultado de {0} / {1} = {2}", primero, segundo, calculadora.divide(primero, segundo));
                         }
                         else { Console.WriteLine("Operador incorrecto Recuerde que es +,-,*,x y /"); }
                         Console.ReadLine();
@@ -88,11 +63,7 @@ namespace HelloGit
                     string men = ex.Message.ToString();
                     Console.WriteLine(men);
                     Console.ReadLine();
-                }
-
-
-                //  Console.ReadLine();
-            
+                }            
         }
     }
 }
