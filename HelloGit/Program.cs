@@ -13,14 +13,11 @@ namespace HelloGit
             Calculadora calculadora = new Calculadora();
                 try
                 {
-
                     double primero = 0;
                     double segundo = 0;
-                    string operador;
-                    
+                    string operador; 
                     do
                     {
-
                         Console.WriteLine("Escriba el primer numero");
                         primero = double.Parse(Console.ReadLine());
                         Console.WriteLine("Escriba el segundo numero");
@@ -32,28 +29,7 @@ namespace HelloGit
                         Console.WriteLine("Para dividir: / ");
                         operador = Console.ReadLine();
 
-                        if (operador == "*" || operador == "x" || operador == "X")
-                        {
-                            Console.WriteLine("El resultado de {0} * {1} = {2}", primero, segundo, calculadora.multiply(primero, segundo));
-                        }
-                        else if (operador == "+")
-                        {
-                            
-                            Console.WriteLine("El resultado de {0} + {1} = {2}", primero, segundo, calculadora.plus(primero,segundo));
-                        }
-                        else if (operador == "-")
-                        {
-                            
-                            Console.WriteLine("El resultado de {0} - {1} = {2}", primero, segundo, calculadora.minus(primero, segundo));
-                        }
-                        else if (operador == "/")
-                        {
-                            
-                            Console.WriteLine("El resultado de {0} / {1} = {2}", primero, segundo, calculadora.divide(primero, segundo));
-                        }
-                        else { Console.WriteLine("Operador incorrecto Recuerde que es +,-,*,x y /"); }
-                        Console.ReadLine();
-                        Console.Clear();
+                        calculadora.msj(operador, primero, segundo);
 
                     } while (primero != 0 && segundo != 0);
 
