@@ -8,7 +8,10 @@ namespace HelloGit
 {
     public class Calculadora
     {
-       
+        double primero = 0;
+        double segundo = 0;
+        string operador;
+
         public double plus(double a,double b)
         {
             return a + b;
@@ -25,6 +28,7 @@ namespace HelloGit
         {
             return a / b;
         }
+
 
         public void msj(string op, double a, double b)
         {
@@ -52,6 +56,32 @@ namespace HelloGit
             else { Console.WriteLine("Operador incorrecto Recuerde que es +,-,*,x y /"); }
             Console.ReadLine();
             Console.Clear();
+        }
+        public void Calculator()
+        {
+            try
+            {
+                do
+                {
+                    Console.WriteLine("Escriba el primer numero");
+                    primero = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Escriba el segundo numero");
+                    segundo = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Digite para:");
+                    Console.WriteLine("Para sumar: +");
+                    Console.WriteLine("para Restar: -");
+                    Console.WriteLine("Multiplicar: * o x");
+                    Console.WriteLine("Para dividir: / ");
+                    operador = Console.ReadLine();
+                    msj(operador, primero, segundo);
+                } while (primero != 0 && segundo != 0);
+            }
+            catch (Exception ex)
+            {
+                string men = ex.Message.ToString();
+                Console.WriteLine(men);
+                Console.ReadLine();
+            }
         }
     }
 }
