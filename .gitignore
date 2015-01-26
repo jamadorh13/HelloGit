@@ -1,0 +1,18 @@
+*.xlsx
+*.sln
+*.suo
+t
+[Dd]ebug/
+#        *.exe
+#        *.vshost.exe
+#        *.pdb
+#        *.exe.cofig
+#        *.vshost.exe.config
+#        *.vshost.exe.manifes
+[Oo]bj/
+[Bb]in/
+[Pp]roperties/
+
+
+
+
